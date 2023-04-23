@@ -1,9 +1,9 @@
 ---
 name: CSS practice
 about: This template is for CSS practice use.
-title: ''
+title: CHECK
 labels: check
-assignees: ''
+assignees: Solitar7
 
 ---
 
