@@ -1,0 +1,92 @@
+/* Class Selector */
+.demo{
+    color:yellow;
+}
+
+.date{
+    text-align: center;
+}
+
+/* ID Selector */
+#head{
+    text-align:center
+}
+
+/* Universal Selector */
+*{
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+/* Element Selector; Body background color */
+body{
+    background-color:lightblue;
+}
+
+@media (max-width:1000px) {
+    body{
+        background-color: wheat;
+    }
+}
+
+img{
+    max-width: 30%;
+    height: auto;
+}
+
+/* Attribute Selector */
+details[class="concern"]{
+    margin: 1vw;
+    margin-left: 1px;
+    padding: 1vw;
+    padding-left: 1px;
+    border: 2px solid black;
+    border-left: 2px solid red;
+}
+
+/* Pseudo-class Selector */
+a:hover{
+    display: none;
+}
+
+/* Selector List */
+h1,
+h2,
+h3{
+    color: blue;
+}
+
+/* Descendant Combinator */
+body h3{
+    position: sticky;
+    background-color: gray;
+    top: 0;
+}
+
+/* Child Combinator */
+body > ol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* General sibling combinator */
+h3 + ul{
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Adjacent sibling combinator */
+img ~ audio{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* Combining Two Selectors */
+h1 + h2[class="date"]{
+    font-size: 100%;
+}
+
